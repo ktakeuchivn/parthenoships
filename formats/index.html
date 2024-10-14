@@ -12,7 +12,7 @@
         <link rel="prev" href="..">
       
       
-        <link rel="next" href="../hanoiwalk/">
+        <link rel="next" href="../hanoiwalk1/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -38,8 +38,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,300i,400,400i,700,700i%7CInconsolata:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans JP";--md-code-font:"Inconsolata"}</style>
       
     
     
@@ -195,7 +195,7 @@
         
   
   <span class="md-ellipsis">
-    Top
+    Top page
   </span>
   
 
@@ -266,9 +266,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#material-for-mkdocstips" class="md-nav__link">
+  <a href="#material-for-mkdocsadmonitations" class="md-nav__link">
     <span class="md-ellipsis">
-      Material for MkDocsのTips
+      Material for MkDocsの警告文(admonitations)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      脚注
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      コードハイライト
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      チャートとか
     </span>
   </a>
   
@@ -289,7 +316,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hanoiwalk/" class="md-nav__link">
+      <a href="../hanoiwalk1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -338,9 +365,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#material-for-mkdocstips" class="md-nav__link">
+  <a href="#material-for-mkdocsadmonitations" class="md-nav__link">
     <span class="md-ellipsis">
-      Material for MkDocsのTips
+      Material for MkDocsの警告文(admonitations)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      脚注
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      コードハイライト
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      チャートとか
     </span>
   </a>
   
@@ -363,7 +417,7 @@
 
 <h1 id="_1">書式検証</h1>
 <h2 id="mkdocs">MkDocsそのものの設定と参考にしたサイト</h2>
-<h2 id="material-for-mkdocstips">Material for MkDocsのTips</h2>
+<h2 id="material-for-mkdocsadmonitations">Material for MkDocsの警告文(admonitations)</h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>これはノートです。</p>
@@ -371,6 +425,46 @@
 <div class="admonition note">
 <p class="admonition-title">タイトルを変えることもできます。</p>
 <p>Lorem ipsum dolor sit amet.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>テキストサイトだから使うのはTipsと、(tipsではなくtipに注意。）</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>infoかな。</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">ここでツッコミ</p>
+<p>dangerだと雷アイコンになるので、自己ツッコミ芸にはこれかも。</p>
+</div>
+<h2 id="_2">脚注</h2>
+<p>脚注もつけられる。これはすごいね。<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
+<h2 id="_3">コードハイライト</h2>
+<p>人様にコードを教えるようなコンテンツは作らないつもり（作る能力がない）のだが、せっかくあるので試してみる。無駄に格好いいから。
+でも、色がハイライトしない。それじゃないとかっこよくない。それとコピーアイコンも欲しいな。</p>
+<pre><code class="language-c++">#include &lt;iostream&gt;
+ void main() {
+ std::cout &lt;&lt; &quot;Hello world!&quot; &lt;&lt; std::endl;
+}
+</code></pre>
+<h2 id="_4">チャートとか</h2>
+<p>だいすきなmermaid.
+あれ？　展開してくれない。</p>
+<pre><code class="language-mermaid">graph LR
+A[Start] --&gt; B{Error?};
+B --&gt;|Yes| C[Hmm...];
+C --&gt; D[Debug];
+D --&gt; B;
+B ----&gt;|No| E[Yay!];
+</code></pre>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>脚注のナンバリングは手動だけどね。しょうがないね。&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
 </div>
 
 
